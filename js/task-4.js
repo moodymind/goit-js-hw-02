@@ -27,10 +27,12 @@ console.log(getShippingCost("Chile")); // "Shipping to Chile will cost 250 credi
 console.log(getShippingCost("Jamaica")); // "Shipping to Jamaica will cost 120 credits"
 console.log(getShippingCost("Sweden")); // "Sorry, there is no delivery to your country"
 
-function calculateTotalPrice(order) {
-  for (let totalPrice of order) {
-    totalPrice += 1;
+function calculateTotal(number) {
+  let index = 0;
+  while (index <= number) {
+    number += 1;
   }
+  return number;
 }
 
-console.log(calculateTotalPrice([12, 85, 37, 4]));
+console.log(calculateTotal(3));
